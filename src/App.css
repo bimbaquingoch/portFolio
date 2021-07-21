@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+:root {
+  --body-background: #f0f3fa;
+  --numeros-letras-primario: #111521;
+  --letras-cover: #f9f9f9;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 62.5%;
+  background-color: var(--body-background);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (min-width: 760px) {
+  .about-container {
+    height: 50vh;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 700px;
+  }
+  .about-container__img img {
+    width: 100%;
+    margin-bottom: 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 1024px) {
+  .about-container {
+    max-width: 1024px;
+    margin-bottom: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .slider {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .slider section {
+    grid-column: 2;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --numeros-letras-primario: #f9f9f9;
+    --body-background: #2d3556;
   }
 }

@@ -1,0 +1,34 @@
+.about-container {
+  color: var(--numeros-letras-primario);
+  display: grid;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.about-container_desc {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-container_desc h3 {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.about-container_desc p {
+  font-size: 1.6rem;
+  padding: 30px;
+}
+.about-container__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-container__img img {
+  margin-bottom: 30px;
+  width: 80%;
+}
