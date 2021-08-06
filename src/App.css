@@ -1,5 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 :root {
+  --main-color: #e02f6b;
+  --blue: #0000ff;
+  --blue-dark: #18293c;
+  --orange: #ffa500;
+  --green-yellow: #cddc39;
   --body-background: #f0f3fa;
+  --pink-light: #efa2b4;
+  --cyan-light: #aef1ee;
+  --white: #fff;
+  --white-alpha-40: rgba(255, 255, 255, 0.4);
+  --white-alpha-25: rgba(255, 255, 255, 0.25);
+  --backdrop-filter-blur: blur(5px);
   --numeros-letras-primario: #111521;
   --letras-cover: #f9f9f9;
 }
@@ -7,47 +20,190 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: none;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
 }
 
 html {
-  font-family: "JetBrains Mono", monospace;
   font-size: 62.5%;
-  background-color: var(--body-background);
 }
 
-@media screen and (min-width: 760px) {
-  .about-container {
-    height: 50vh;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto;
-    margin-top: 20px;
-    max-width: 700px;
-  }
-  .about-container__img img {
-    width: 100%;
-    margin-bottom: 0;
-  }
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--pink-light),
+    var(--cyan-light)
+  );
+  background-attachment: fixed;
+  color: var(--blue-dark);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: 5vh 15px;
+  -webkit-tap-highlight-color: transparent;
 }
 
-@media screen and (min-width: 1024px) {
-  .about-container {
-    max-width: 1024px;
-    margin-bottom: 20px;
-  }
-
-  .slider {
-    display: grid;
-    grid-auto-flow: dense;
-    grid-template-columns: 3fr 1fr;
-  }
-
-  .slider section {
-    grid-column: 2;
-  }
+body::before {
+  background-color: var(--green-yellow);
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.12;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 600;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+section {
+  background-color: var(--white-alpha-25);
+  backdrop-filter: var(--backdrop-filter-blur);
+  border: 1px solid var(--white-alpha-40);
+  border-radius: 30px;
+  min-height: 90vh;
+}
+
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container {
+  padding: 0 40px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aling-items-center {
+  align-items: center;
+}
+
+.sec-padding {
+  padding: 80px 0;
+}
+/* Section title */
+
+.section-title {
+  margin-bottom: 40px;
+  padding: 0 15px;
+  width: 100%;
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 4rem;
+  text-transform: capitalize;
+}
+
+/* Custom scrollbar */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+
+/* buttons */
+
+button {
+  font-family: inherit;
+  user-select: none;
+}
+
+.btn {
+  background-color: var(--white-alpha-25);
+  border: 1px solid var(--white-alpha-40);
+  border-radius: 30px;
+  color: var(--main-color);
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 10px 28px;
+  position: relative;
+  text-transform: capitalize;
+  transition: width 0.3s ease;
+  user-select: none;
+  vertical-align: middle;
+}
+
+.btn::before {
+  background-color: var(--main-color);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: width 0.3s ease;
+  width: 0%;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn:hover {
+  color: var(--white);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --numeros-letras-primario: #f9f9f9;
-    --body-background: #2d3556;
+    --main-color: #e02f6b;
+    --blue: #0000ff;
+    --blue-dark: #18293c;
+    --orange: #ffa500;
+    --green-yellow: #cddc39;
+    --body-background: #f0f3fa;
+    --pink-light: #a88aeb;
+    /* --pink-light: #efa2b4; */
+    --cyan-light: #aef1ee;
+    --white: #fff;
+    --white-alpha-40: rgba(255, 255, 255, 0.4);
+    --white-alpha-25: rgba(255, 255, 255, 0.25);
+    --backdrop-filter-blur: blur(5px);
+    --numeros-letras-primario: #111521;
+    --letras-cover: #f9f9f9;
   }
 }

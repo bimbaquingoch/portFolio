@@ -1,34 +1,84 @@
-.about-container {
-  color: var(--numeros-letras-primario);
-  display: grid;
-  margin: 0 auto;
-  height: auto;
-  margin-top: 30px;
+.about-img {
+  padding: 0 15px;
+  width: 40%;
+}
+
+.about-text {
+  padding: 0 15px;
+  width: 60%;
+}
+
+.about-img .img-box {
+  background-color: var(--white-alpha-25);
+  border: 1px solid var(--white-alpha-40);
+  border-radius: 10px;
+  margin: auto;
+  max-width: 380px;
+}
+
+.about-img .img-box img {
   width: 100%;
 }
 
-.about-container_desc {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.about-text h3 {
+  font-size: 2rem;
+  margin: 20px 0;
+  text-transform: capitalize;
 }
 
-.about-container_desc h3 {
-  font-size: 2.2rem;
-  text-align: center;
+.about-text .skills {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.about-container_desc p {
-  font-size: 1.6rem;
-  padding: 30px;
+.about-text .skill-item {
+  background-color: var(--white-alpha-25);
+  border: 1px solid var(--white-alpha-40);
+  border-radius: 20px;
+  margin: 0 10px 10px 0;
+  padding: 5px 15px;
+  text-transform: capitalize;
 }
-.about-container__img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.about-tabs {
+  margin-top: 20px;
 }
-.about-container__img img {
-  margin-bottom: 30px;
-  width: 80%;
+
+.about-tabs .tab-item {
+  background-color: transparent;
+  border: none;
+  color: var(--blue-dark);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0 30px 0 0;
+  opacity: 0.5;
+  padding: 2px 0;
+  position: relative;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.about-tabs .tab-item:last-child {
+  margin: 0;
+}
+.about-tabs .tab-item::before {
+  background-color: var(--blue-dark);
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transition: width 0.3s ease;
+  width: 0%;
+}
+.about-tabs .tab-item:hover::before {
+  width: 100%;
+  background-color: var(--main-color);
+}
+.about-tabs .tab-item.active {
+  color: var(--main-color);
+  cursor: auto;
+  opacity: 1;
 }

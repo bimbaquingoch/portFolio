@@ -1,36 +1,16 @@
-import { useState, useEffect } from "react";
-import Cover from "./components/cover/Cover";
-import Navbar from "./components/navbar/Navbar";
-import About from "./components/about/About";
-import Slider from "./components/slider/Slider";
-import Info from "./components/info/Info";
-import Footer from "./components/footer/Footer";
+import React from "react";
+// import { Home } from "./components/home/Home";
+import { About } from "./components/about/About";
 import "./App.css";
 
-function App() {
-  const [scrollHeight, setScrollHeight] = useState(0);
-
-  // posicion que controla la posicion del scroll
-
-  const hanldeScroll = () => {
-    const position = window.pageYOffset;
-    setScrollHeight(position);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", hanldeScroll);
-  }, [scrollHeight]);
-
+const App = () => {
   return (
-    <div className="App">
-      <Navbar isScrollin={scrollHeight} />
-      <Cover />
+    <div className="main">
+      {/*<Home />*/}
+      {/*about section*/}
       <About />
-      <Slider />
-      <Info />
-      <Footer />
     </div>
   );
-}
+};
 
 export default App;
