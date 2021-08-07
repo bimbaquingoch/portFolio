@@ -83,6 +83,10 @@ img {
   vertical-align: middle;
 }
 
+ul {
+  list-style: none;
+}
+
 section {
   background-color: var(--white-alpha-25);
   backdrop-filter: var(--backdrop-filter-blur);
