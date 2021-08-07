@@ -1,0 +1,38 @@
+export const projects = [
+  {
+    id: 0,
+    desc: "lorem ipsum 1",
+    title: "proyecto 1",
+    img: "https://raw.githubusercontent.com/bimbaquingoch/newNvcode/master/utils/images/neovim.png",
+    created: "date",
+    tech: "tecnologies",
+    url: "url",
+  },
+  {
+    id: 1,
+    desc: "lorem ipsum 2",
+    title: "proyecto 2",
+    img: "https://raw.githubusercontent.com/bimbaquingoch/newNvcode/master/utils/images/neovim.png",
+    created: "date",
+    tech: "tecnologies",
+    url: "url",
+  },
+  {
+    id: 2,
+    desc: "lorem ipsum 3",
+    title: "proyecto 3",
+    img: "https://raw.githubusercontent.com/bimbaquingoch/newNvcode/master/utils/images/neovim.png",
+    created: "date",
+    tech: "tecnologies",
+    url: "url",
+  },
+  {
+    id: 3,
+    desc: "lorem ipsum 4",
+    title: "proyecto 4",
+    img: "https://raw.githubusercontent.com/bimbaquingoch/newNvcode/master/utils/images/neovim.png",
+    created: "date",
+    tech: "tecnologies",
+    url: "url",
+  },
+];

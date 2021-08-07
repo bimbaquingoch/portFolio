@@ -88,3 +88,7 @@
   margin-bottom: 10px;
   text-transform: capitalize;
 }
+
+.pp-body .general-info li span {
+  font-weight: 300;
+}
