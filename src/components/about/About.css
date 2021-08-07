@@ -73,12 +73,65 @@
   transition: width 0.3s ease;
   width: 0%;
 }
+
 .about-tabs .tab-item:hover::before {
-  width: 100%;
   background-color: var(--main-color);
+  width: 100%;
 }
-.about-tabs .tab-item.active {
+
+.about-text .timeline {
+  position: relative;
+}
+
+.about-text .timeline::before {
+  background-color: var(--main-color);
+  content: "";
+  height: 100%;
+  left: 5px;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.about-text .tab-content {
+  padding: 40px 0;
+}
+
+.about-text .timeline-item {
+  margin-bottom: 30px;
+  padding: 10px 0 0 40px;
+  position: relative;
+}
+
+.about-text .timeline-item::before {
+  background-color: var(--main-color);
+  border-radius: 50%;
+  content: "";
+  height: 11px;
+  left: 0;
+  position: absolute;
+  top: 16px;
+  width: 11px;
+}
+
+.about-text .timeline-item:last-child {
+  margin-bottom: 0;
+}
+.about-text .timeline-item .date {
   color: var(--main-color);
-  cursor: auto;
-  opacity: 1;
+  display: block;
+  font-weight: 400;
+  margin: 0 0 10px;
+}
+.about-text .timeline-item h4 {
+  font-size: 1.8rem;
+  margin: 0 0 10px;
+  text-transform: capitalize;
+}
+.about-text .timeline-item h4 span {
+  font-weight: 400;
+}
+
+.about-text .btn {
+  margin: 0 15px 15px 0;
 }
