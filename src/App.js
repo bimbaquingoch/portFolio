@@ -7,9 +7,7 @@ import "./App.css";
 const App = () => {
   return (
     <div className="main">
-      <Home />
       {/*about section*/}
-      <About />
       {/*portfolio section*/}
       <Portfolio />
     </div>

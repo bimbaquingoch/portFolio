@@ -6,11 +6,12 @@ export const PopUp = ({
   desc,
   tech,
   url,
+  img,
   setPopUpIndex,
   setPopUp,
 }) => {
   return (
-    <div className="portfolio-popup">
+    <div className="portfolio-popup animate__animated animate__fadeIn">
       <div className="pp-inner">
         <div className="pp-content">
           <div className="pp-header">
@@ -26,10 +27,7 @@ export const PopUp = ({
               X
             </button>
             <div className="pp-thumbnail">
-              <img
-                src="https://raw.githubusercontent.com/bimbaquingoch/newNvcode/master/utils/images/neovim.png"
-                alt="hola"
-              />
+              <img src={img} alt="hola" />
             </div>
             <h3>{title}</h3>
           </div>
@@ -46,7 +44,15 @@ export const PopUp = ({
                   Technologies: <span>{tech}</span>
                 </li>
                 <li>
-                  View on: <span>{url}</span>
+                  View on:
+                  <a
+                    className="btn"
+                    href={url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span>{title}</span>
+                  </a>
                 </li>
               </ul>
             </div>

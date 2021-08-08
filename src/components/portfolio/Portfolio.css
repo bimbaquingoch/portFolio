@@ -70,8 +70,14 @@
   width: 40px;
 }
 
+.pp-thumbnail {
+  align-items: center;
+  display: flex;
+}
+
 .pp-thumbnail img {
   border-radius: 10px;
+  margin: 0 auto;
 }
 
 .pp-header h3 {
@@ -91,4 +97,14 @@
 
 .pp-body .general-info li span {
   font-weight: 300;
+}
+
+.pp-body .general-info li a {
+  margin-left: 20px;
+}
+
+/* animacion */
+.portfolio-popup {
+  animation: fadeIn;
+  animation-duration: 3500ms;
 }

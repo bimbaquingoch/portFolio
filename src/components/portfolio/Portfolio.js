@@ -28,10 +28,11 @@ export const Portfolio = () => {
           </div>
         </section>
       )}
-      {projects.map(({ id, created, desc, tech, title, url }, index) => {
+      {projects.map(({ id, created, desc, tech, title, url, img }, index) => {
         if (index === popUpIndex) {
           return (
             <PopUp
+              img={img}
               key={index + id}
               created={created}
               desc={desc}
