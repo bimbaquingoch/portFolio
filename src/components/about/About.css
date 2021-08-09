@@ -74,9 +74,17 @@
   width: 0%;
 }
 
-.about-tabs .tab-item:hover::before {
-  background-color: var(--main-color);
-  width: 100%;
+.about-tabs .tab-item:focus {
+  border-right: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  box-shadow: 0 1px 3px 0 var(--main-color);
+  padding: 3px;
+}
+.about-tabs .tab-item:hover {
+  border-right: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  box-shadow: 0 1px 3px 0 var(--main-color);
+  padding: 3px;
 }
 
 .about-text .timeline {

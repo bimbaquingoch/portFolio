@@ -184,6 +184,11 @@ button {
   z-index: -1;
 }
 
+.btn:focus {
+  color: var(--white);
+}
+
+.btn:focus::before,
 .btn:hover::before {
   width: 100%;
 }
@@ -209,5 +214,13 @@ button {
     --backdrop-filter-blur: blur(5px);
     --numeros-letras-primario: #111521;
     --letras-cover: #f9f9f9;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: var(--pink-light);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--blue-dark);
   }
 }

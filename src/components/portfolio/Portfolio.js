@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { projects } from "./data";
 import { PopUp } from "./PopUp";
-import "./Portfolio.css";
 import { PortfolioItem } from "./PortfolioItem";
+import "./Portfolio.css";
 
 export const Portfolio = () => {
   const [popUp, setPopUp] = useState(false);
