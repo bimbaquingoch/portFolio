@@ -7,6 +7,12 @@ export const Home = () => {
     <section className="home-section aling-items-center">
       <div className="container">
         <div className="row aling-items-center">
+          <div className="home-img">
+            <div className="img-box">
+              <img src={profileImg} alt="profile-img" />
+            </div>
+          </div>
+
           <div className="home-text">
             <p>hi! I'm</p>
             <h1>Bryan Imbaquingo</h1>
@@ -19,11 +25,6 @@ export const Home = () => {
             <a href="#" className="btn">
               Portfolio
             </a>
-          </div>
-          <div className="home-img">
-            <div className="img-box">
-              <img src={profileImg} alt="profile-img" />
-            </div>
           </div>
         </div>
       </div>

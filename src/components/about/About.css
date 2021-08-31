@@ -1,11 +1,13 @@
+.section-title {
+  margin-top: 20px;
+}
+
 .about-img {
   padding: 0 15px;
-  width: 40%;
 }
 
 .about-text {
-  padding: 0 15px;
-  width: 60%;
+  padding: 35px 15px;
 }
 
 .about-img .img-box {
@@ -41,6 +43,9 @@
 }
 
 .about-tabs {
+  align-items: center;
+  justify-content: center;
+  display: flex;
   margin-top: 20px;
 }
 
@@ -63,6 +68,7 @@
 .about-tabs .tab-item:last-child {
   margin: 0;
 }
+
 .about-tabs .tab-item::before {
   background-color: var(--blue-dark);
   bottom: 0;
@@ -107,7 +113,7 @@
 
 .about-text .timeline-item {
   margin-bottom: 30px;
-  padding: 10px 0 0 40px;
+  padding: 10px 0 0 30px;
   position: relative;
 }
 

@@ -101,10 +101,10 @@ section {
   position: relative;
 }
 
-.container {
-  padding: 0 40px;
-  width: 100%;
-}
+/* .container { */
+/*   padding: 0 40px; */
+/*   width: 100%; */
+/* } */
 
 .row {
   display: flex;
@@ -113,10 +113,6 @@ section {
 
 .aling-items-center {
   align-items: center;
-}
-
-.sec-padding {
-  padding: 80px 0;
 }
 
 .flex-end {
@@ -203,6 +199,44 @@ button {
   color: var(--white);
 }
 
+@media screen and (min-width: 720px) {
+  .container {
+    padding: 0 40px;
+    width: 100%;
+  }
+
+  .sec-padding {
+    padding: 80px 0;
+  }
+
+  .section-title {
+    margin-top: 0;
+  }
+  /* home */
+  .home-section {
+    display: flex;
+    padding: 120px 0;
+  }
+  .home-text,
+  .home-img {
+    width: 50%;
+  }
+  .home-text h1 {
+    font-size: 5rem;
+  }
+  /* about */
+  .about-img {
+    width: 40%;
+  }
+
+  .about-text {
+    width: 60%;
+  }
+
+  .about-text .timeline-item {
+    padding: 10px 0 0 40px;
+  }
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --main-color: #e02f6b;

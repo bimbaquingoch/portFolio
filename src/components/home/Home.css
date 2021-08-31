@@ -2,12 +2,12 @@
 
 .home-section {
   display: flex;
-  padding: 120px 0;
+  padding: 100px 0;
 }
 
 .home-text,
 .home-img {
-  width: 50%;
+  width: 100%;
   padding: 15px;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .home-text h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   text-transform: capitalize;
 }
 
