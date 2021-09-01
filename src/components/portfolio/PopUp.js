@@ -43,7 +43,7 @@ export const PopUp = ({
                 <li>
                   Technologies: <span>{tech}</span>
                 </li>
-                <li>
+                <li className="link-project">
                   View on:
                   <a
                     className="btn"

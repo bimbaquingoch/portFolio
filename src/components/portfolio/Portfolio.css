@@ -1,9 +1,9 @@
-.portfolio-section {
-  padding-bottom: 50px;
+.portfolio-section h2 {
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 .portfolio-item {
   margin: 0 15px 30px;
-  width: calc((100% / 3) - 30px);
 }
 .portfolio-item-thumbnail {
   background-color: var(--white-alpha-25);
@@ -99,8 +99,13 @@
   font-weight: 300;
 }
 
-.pp-body .general-info li a {
-  margin-left: 20px;
+.link-project {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.link-project a {
+  margin-top: 10px;
 }
 
 /* animacion */

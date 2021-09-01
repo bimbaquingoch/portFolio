@@ -32,15 +32,17 @@ export const Info = () => {
   return (
     <div className="contact-info">
       <div className="contact-info-item">
-        <h3>email</h3>
-        <p>bryan_3871@hotmail.com</p>
+        <h3>
+          email:<p>bryan_3871@hotmail.com</p>
+        </h3>
       </div>
       <div className="contact-info-item">
-        <h3>phone</h3>
-        <p>+593 963 766 640</p>
+        <h3>
+          phone:<p>+593 963 766 640</p>
+        </h3>
       </div>
+
       <div className="contact-info-item">
-        <h3>email</h3>
         <div className="social-links">
           {social.map(({ img, url, alt, id }) => (
             <a key={id} href={url} target="_blank" rel="noreferrer">

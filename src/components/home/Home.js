@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import profileImg from "../../media/profile-img.png";
+import { Info } from "../contact/Info";
 
 export const Home = () => {
   return (
@@ -27,6 +28,7 @@ export const Home = () => {
             </a>
           </div>
         </div>
+        <Info />
       </div>
     </section>
   );

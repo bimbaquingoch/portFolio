@@ -1,50 +1,27 @@
-.contact-form,
-.contact-info {
-  padding: 0 15px;
-  width: 50%;
-}
-
-.contact-form .input-group {
-  margin-bottom: 30px;
-  width: 100%;
-}
-
-.contact-form .input-control::placeholder {
-  color: var(--blue-dark);
-  font-weight: 300;
-  opacity: 0.8;
-}
-.contact-form .input-control {
-  background-color: var(--white-alpha-25);
-  border: 1px solid transparent;
-  border-radius: 25px;
-  color: var(--blue-dark);
-  display: block;
-  font-family: inherit;
-  font-size: 1.6rem;
-  font-weight: 400;
-  height: 50px;
+figure {
   padding: 0 20px;
   width: 100%;
 }
-
-.contact-form .input-control:focus {
-  border: 2px solid var(--white-alpha-40);
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
-.contact-form textarea.input-control {
-  height: 120px;
-  padding-top: 15px;
-  resize: none;
-}
-
 .contact-info-item {
+  align-items: center;
+  display: flex;
   margin: 0 0 30px;
   padding: 0 0 0 20px;
+  /* width: 100%; */
 }
 
 .contact-info-item h3 {
   font-size: 2rem;
   text-transform: capitalize;
+}
+.contact-info-item h3 p {
+  text-transform: none;
+  font-weight: lighter;
 }
 
 .contact-info-item .social-links a {

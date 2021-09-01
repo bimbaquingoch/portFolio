@@ -1,25 +1,18 @@
 import React from "react";
-import { Form } from "./Form";
-import { Info } from "./Info";
 import "./Contact.css";
 
 export const Contact = () => {
   return (
     <section className="contact-section sec-padding">
-      <div className="container">
-        <div className="row">
-          <div className="section-title">
-            <h2>contact me</h2>
-          </div>
-        </div>
-        <div className="row">
-          <div className="contact-form">
-            {/* form */}
-            <Form />
-          </div>
-          <Info />
-        </div>
+      <div className="section-title">
+        <h2>Stadistics</h2>
       </div>
+      <figure>
+        <embed src="https://wakatime.com/share/@gokyan/373d1b80-172d-4dad-9310-166931f236a1.svg"></embed>
+      </figure>
+      <figure>
+        <embed src="https://wakatime.com/share/@gokyan/ce82d4cb-aba5-48d4-86d8-bf3e77d5611b.svg"></embed>
+      </figure>
     </section>
   );
 };

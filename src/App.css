@@ -122,7 +122,6 @@ section {
 /* Section title */
 
 .section-title {
-  margin-bottom: 40px;
   padding: 0 15px;
   width: 100%;
   text-align: center;
@@ -211,6 +210,7 @@ button {
 
   .section-title {
     margin-top: 0;
+    margin-bottom: 40px;
   }
   /* home */
   .home-section {
@@ -235,6 +235,18 @@ button {
 
   .about-text .timeline-item {
     padding: 10px 0 0 40px;
+  }
+  /* portfolio */
+  .portfolio-item {
+    width: calc((100% / 3) - 30px);
+  }
+  .portfolio-section h2 {
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+  /* info */
+  .contact-info {
+    justify-content: space-evenly;
   }
 }
 @media (prefers-color-scheme: dark) {

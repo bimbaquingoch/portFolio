@@ -58,6 +58,7 @@ export const About = () => {
     "Neovim",
     "NodeJS",
     "MongoDB",
+    "figma",
   ];
 
   return (
