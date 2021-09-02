@@ -46,7 +46,7 @@ body {
   line-height: 1.5;
   min-height: 100vh;
   overflow-x: hidden;
-  padding: 5vh 15px;
+  padding: 35px 15px;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -92,7 +92,7 @@ section {
   backdrop-filter: var(--backdrop-filter-blur);
   border: 1px solid var(--white-alpha-40);
   border-radius: 30px;
-  min-height: 90vh;
+  min-height: calc(100vh - 70px);
 }
 
 .main {

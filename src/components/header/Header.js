@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./Header.css";
 
 export const Header = () => {
@@ -26,12 +25,14 @@ export const Header = () => {
                     about
                   </a>
                 </li>
+
                 <li>
                   {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a href="#" className="nav-item">
                     portfolio
                   </a>
                 </li>
+
                 <li>
                   {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                   <a href="#" className="nav-item">
