@@ -32,13 +32,6 @@ export const Header = () => {
                     portfolio
                   </a>
                 </li>
-
-                <li>
-                  {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
-                  <a href="#" className="nav-item">
-                    contact
-                  </a>
-                </li>
               </ul>
             </div>
           </nav>

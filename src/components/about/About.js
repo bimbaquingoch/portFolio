@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import aboutImg from "../../media/about-img.png";
 import "./About.css";
 
 const Education = () => {
@@ -59,6 +58,7 @@ export const About = () => {
     "NodeJS",
     "MongoDB",
     "figma",
+    "flask",
   ];
 
   return (
@@ -72,7 +72,10 @@ export const About = () => {
         <div className="row">
           <div className="about-img">
             <div className="img-box">
-              <img src={aboutImg} alt="about img" />
+              <img
+                src="https://avatars.githubusercontent.com/u/52583430?v=4"
+                alt="about img"
+              />
             </div>
           </div>
           <div className="about-text">

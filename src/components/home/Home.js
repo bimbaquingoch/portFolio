@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import profileImg from "../../media/profile-img.png";
+// import profileImg from "../../media/profile-img.png";
 import { Info } from "../contact/Info";
 
 export const Home = () => {
@@ -10,7 +10,10 @@ export const Home = () => {
         <div className="row aling-items-center">
           <div className="home-img">
             <div className="img-box">
-              <img src={profileImg} alt="profile-img" />
+              <img
+                src="https://avatars.githubusercontent.com/u/52583430?v=4"
+                alt="profile-img"
+              />
             </div>
           </div>
 
