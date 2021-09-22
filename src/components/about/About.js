@@ -2,6 +2,21 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./About.css";
 import { skils } from "../portfolio/data.js";
+import styled from "styled-components";
+
+const SkilContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const Skills = styled.div`
+  background-color: var(--white-alpha-25);
+  border: 1px solid var(--white-alpha-40);
+  border-radius: 20px;
+  margin: 0 10px 10px 0;
+  padding: 5px 15px;
+  text-transform: capitalize;
+`;
 
 const Education = () => {
   return (
@@ -100,13 +115,11 @@ export const About = () => {
             </p>
             {/*skills*/}
             <h3>Skills</h3>
-            <div className="skills">
+            <SkilContainer>
               {skils.map((item) => (
-                <div className="skill-item" key={item}>
-                  {item}
-                </div>
+                <Skills key={item}>{item}</Skills>
               ))}
-            </div>
+            </SkilContainer>
             {/* education experience*/}
             <div className="about-tabs">
               <button

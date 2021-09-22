@@ -4,6 +4,7 @@ import { About } from "./components/about/About";
 import { Portfolio } from "./components/portfolio/Portfolio";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Header } from "./components/header/Header";
+import { Circles } from "./components/Circles.js";
 import "./App.css";
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
           </Route>
         </Switch>
       </Router>
+      <Circles />
     </div>
   );
 };
