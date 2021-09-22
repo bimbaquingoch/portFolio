@@ -59,7 +59,7 @@ const Experience = () => {
             my portfolio
           </p>
           <br />
-          <Link to="portfolio" className="btn">
+          <Link to="/portfolio/projects" className="btn">
             Portfolio
           </Link>
         </div>
