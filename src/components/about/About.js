@@ -95,7 +95,7 @@ export const About = () => {
             </p>
             <br />
             <p>
-              My first program languaje was java, actually I use javascript/
+              My first program language was java, actually I use javascript/
               typescript technologies and I love it!
             </p>
             <br />
