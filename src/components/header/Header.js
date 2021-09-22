@@ -25,7 +25,7 @@ export const Header = () => {
                         onClick={() => {
                           setButton(!button);
                         }}
-                        to="/"
+                        to="/home"
                         className="nav-item"
                       >
                         home

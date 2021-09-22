@@ -20,7 +20,7 @@ const App = () => {
             <Portfolio />
           </Route>
 
-          <Route path="/" exact>
+          <Route path="/home" exact>
             <Home />
           </Route>
         </Switch>
