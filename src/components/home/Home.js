@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-// import profileImg from "../../media/profile-img.png";
+import { Link } from "react-router-dom";
 import { Info } from "../contact/Info";
 
 export const Home = () => {
@@ -21,14 +21,13 @@ export const Home = () => {
             <p>hi! I'm</p>
             <h1>Bryan Imbaquingo</h1>
             <h2>Front end react developer</h2>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
-            <a href="#" className="btn">
+            <Link to="about" className="btn">
               more about me
-            </a>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
-            <a href="#" className="btn">
+            </Link>
+
+            <Link to="portfolio" className="btn">
               Portfolio
-            </a>
+            </Link>
           </div>
         </div>
         <Info />

@@ -1,18 +1,30 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./About.css";
+import { skils } from "../portfolio/data.js";
 
 const Education = () => {
   return (
     <div className="tab-content" id="education">
       <div className="timeline">
         <div className="timeline-item">
-          <span className="date">2013-2016</span>
-          <h4>holaaaa</h4>
+          <span className="date">2021 - ...</span>
+          <h4>Udemy</h4>
+          <p>React: De 0 a experto (Hooks y MERN) Fernando Herrera</p>
+        </div>
+
+        <div className="timeline-item">
+          <span className="date">2016 - 2022</span>
+          <h4>Universidad Politécnica Salesiana</h4>
+          <p>Engineer degree: Computer Science Expected: February 2022. </p>
+        </div>
+
+        <div className="timeline-item">
+          <span className="date">2019 - 2020</span>
+          <h4>Cambridge Assessment</h4>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-            dolores maxime repudiandae, molestias ratione iste praesentium
-            tempora nobis incidunt inventore exercitationem aut ab atque
-            adipisci expedita. Fuga nesciunt sit saepe?
+            Certificate in ESOL international (entry 3) (Preliminary) Level B1
+            Expected: April 2020
           </p>
         </div>
       </div>
@@ -26,13 +38,15 @@ const Experience = () => {
       <div className="timeline">
         <div className="timeline-item">
           <span className="date"></span>
-          <h4>
-            Experiencia <span>pagina random</span>
-          </h4>
+          <h4>Experience</h4>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
-            dignissimos ea amet nemo, delectus eaque?
+            Actually I have experience with personal projects see my projects on
+            my portfolio
           </p>
+          <br />
+          <Link to="portfolio" className="btn">
+            Portfolio
+          </Link>
         </div>
       </div>
     </div>
@@ -41,25 +55,6 @@ const Experience = () => {
 
 export const About = () => {
   const [eduExp, setEduExp] = useState(false);
-  const skils = [
-    "html",
-    "css",
-    "Javascript",
-    "python",
-    "react",
-    "angular",
-    "bootstrap",
-    "bulma css",
-    "material UI",
-    "Git",
-    "Github",
-    "Terminal",
-    "Neovim",
-    "NodeJS",
-    "MongoDB",
-    "figma",
-    "flask",
-  ];
 
   return (
     <section className="about-section sec-padding">
@@ -80,10 +75,28 @@ export const About = () => {
           </div>
           <div className="about-text">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-              cupiditate ex fugiat quis unde. Eius debitis cum eligendi amet
-              mollitia aliquid libero eaque ab vitae quo repellendus, autem eum
-              minus.
+              I am 23, ecuadorian fascinated by web technologies, curious and I
+              like to learn new technologies, frameworks, libraries, etc.
+            </p>
+            <br />
+            <p>
+              My first program languaje was java, actually I use javascript/
+              typescript technologies and I love it!
+            </p>
+            <br />
+            <p>
+              My develop environment is{" "}
+              <b>
+                <i>Ubuntu 20.04</i>
+              </b>{" "}
+              and my favorites text editors are
+              <b>
+                <i>Visual Studio Code</i>
+              </b>{" "}
+              and{" "}
+              <b>
+                <i>Neovim</i>
+              </b>
             </p>
             {/*skills*/}
             <h3>Skills</h3>
@@ -122,13 +135,19 @@ export const About = () => {
             {eduExp === false ? <Education /> : <Experience />}
             {/* contact buttons*/}
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
-            <a href="#" className="btn">
+            <a
+              href="https://1drv.ms/w/s!AnjI1XaXQb2igqB_e84vkjer0-pzMQ?e=4yTOy2"
+              className="btn"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub Icon"
+            >
               download cv
             </a>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
-            <a href="#" className="btn">
+            <Link to="/" className="btn">
               contact me
-            </a>
+            </Link>
           </div>
         </div>
       </div>

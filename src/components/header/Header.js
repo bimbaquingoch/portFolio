@@ -1,42 +1,69 @@
-import React from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 export const Header = () => {
+  const [button, setButton] = useState(false);
   return (
-    <header className="header">
-      <div className="container">
-        <div className="row flex-end">
-          <button type="button" className="nav-toggler">
-            <span></span>
-          </button>
-          <nav className="nav">
-            <div className="nav-inner">
-              <ul>
-                <li>
-                  {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
-                  <a href="#" className="nav-item">
-                    home
-                  </a>
-                </li>
+    <>
+      <header className="header">
+        <div className="container">
+          <div className="row flex-end">
+            <button
+              onClick={() => setButton(!button)}
+              type="button"
+              className="nav-toggler"
+            >
+              <span></span>
+            </button>
+            {button ? (
+              <nav className="nav">
+                <div className="nav-inner">
+                  <ul>
+                    <li>
+                      <Link
+                        onClick={() => {
+                          setButton(!button);
+                        }}
+                        to="/"
+                        className="nav-item"
+                      >
+                        home
+                      </Link>
+                    </li>
 
-                <li>
-                  {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
-                  <a href="#" className="nav-item">
-                    about
-                  </a>
-                </li>
+                    <li>
+                      <Link
+                        onClick={() => {
+                          setButton(!button);
+                        }}
+                        to="/about"
+                        className="nav-item"
+                      >
+                        about
+                      </Link>
+                    </li>
 
-                <li>
-                  {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
-                  <a href="#" className="nav-item">
-                    portfolio
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+                    <li>
+                      <Link
+                        onClick={() => {
+                          setButton(!button);
+                        }}
+                        to="/portfolio"
+                        className="nav-item"
+                      >
+                        portfolio
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            ) : (
+              console.log("hola")
+            )}
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+    </>
   );
 };
