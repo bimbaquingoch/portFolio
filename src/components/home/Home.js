@@ -21,11 +21,15 @@ export const Home = () => {
             <p>hi! I'm</p>
             <h1>Bryan Imbaquingo</h1>
             <h2>Front end react developer</h2>
-            <Link to="about" className="btn">
+            <Link to="/portfolio/about" className="btn" aria-label="About">
               more about me
             </Link>
 
-            <Link to="portfolio" className="btn">
+            <Link
+              to="/portfolio/projects"
+              className="btn"
+              aria-label="Projects"
+            >
               Portfolio
             </Link>
           </div>

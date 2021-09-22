@@ -25,8 +25,9 @@ export const Header = () => {
                         onClick={() => {
                           setButton(!button);
                         }}
-                        to="/home"
+                        to="/portfolio"
                         className="nav-item"
+                        aria-label="Home"
                       >
                         home
                       </Link>
@@ -37,8 +38,9 @@ export const Header = () => {
                         onClick={() => {
                           setButton(!button);
                         }}
-                        to="/about"
+                        to="/portfolio/about"
                         className="nav-item"
+                        aria-label="About"
                       >
                         about
                       </Link>
@@ -49,8 +51,9 @@ export const Header = () => {
                         onClick={() => {
                           setButton(!button);
                         }}
-                        to="/portfolio"
+                        to="/portfolio/projects"
                         className="nav-item"
+                        aria-label="Projects"
                       >
                         portfolio
                       </Link>

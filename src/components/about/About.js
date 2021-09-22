@@ -134,18 +134,16 @@ export const About = () => {
             </div>
             {eduExp === false ? <Education /> : <Experience />}
             {/* contact buttons*/}
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
             <a
               href="https://1drv.ms/w/s!AnjI1XaXQb2igqB_e84vkjer0-pzMQ?e=4yTOy2"
               className="btn"
               target="_blank"
               rel="noreferrer"
-              aria-label="GitHub Icon"
+              aria-label="Download CV"
             >
               download cv
             </a>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
-            <Link to="/" className="btn">
+            <Link to="/portfolio" className="btn" aria-label="Contact me">
               contact me
             </Link>
           </div>
