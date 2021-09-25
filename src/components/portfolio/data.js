@@ -44,6 +44,15 @@ export const projects = [
     tech: "vimL , lua",
     url: "https://github.com/bimbaquingoch/newNvcode",
   },
+  {
+    id: 5,
+    desc: "Simple medical vet dating",
+    title: "Medical vet dating",
+    img: "https://raw.githubusercontent.com/bimbaquingoch/01-citas-mascotas/master/public/pacientes.png?token=AMRFYBRSAIUHDOHTCVXFJN3BK72CI",
+    created: "24 - 07 - 2021",
+    tech: "react , styled components , react-toastify",
+    url: "https://compassionate-beaver-6d56de.netlify.app/",
+  },
 ];
 
 export const skils = [
