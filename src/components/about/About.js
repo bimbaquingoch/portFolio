@@ -59,7 +59,7 @@ const Experience = () => {
             my portfolio
           </p>
           <br />
-          <Link to="/portfolio/projects" className="btn">
+          <Link to="/projects" className="btn">
             Portfolio
           </Link>
         </div>
@@ -128,7 +128,9 @@ export const About = () => {
                 className="tab-item"
                 data-target="#"
                 style={
-                  eduExp === false ? { color: "#ff005d" } : { color: "#18293c" }
+                  eduExp === false
+                    ? { color: "#ff005d" }
+                    : { color: "var(--letras-cover)" }
                 }
               >
                 Education
@@ -139,7 +141,9 @@ export const About = () => {
                 className="tab-item"
                 data-target="#"
                 style={
-                  eduExp === true ? { color: "#ff005d" } : { color: "#18293c" }
+                  eduExp === true
+                    ? { color: "#ff005d" }
+                    : { color: "var(--letras-cover)" }
                 }
               >
                 Experience
@@ -156,7 +160,7 @@ export const About = () => {
             >
               download cv
             </a>
-            <Link to="/portfolio" className="btn" aria-label="Contact me">
+            <Link to="/projects" className="btn" aria-label="Contact me">
               contact me
             </Link>
           </div>

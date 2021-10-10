@@ -9,7 +9,7 @@
   background-color: var(--white-alpha-25);
   border: 1px solid var(--white-alpha-40);
   border-radius: 10px;
-  padding: 10px;
+  padding: 1px;
 }
 .portfolio-item-thumbnail img {
   border-radius: 10px;
@@ -17,6 +17,7 @@
 }
 
 .portfolio-item h3 {
+  color: var(--letras-cover);
   font-size: 2rem;
   margin: 20px 0;
   text-transform: capitalize;
@@ -28,6 +29,7 @@
 
 /* popup */
 .portfolio-popup {
+  color: var(--letras-cover);
   height: 100%;
   left: 0;
   overflow-y: auto;

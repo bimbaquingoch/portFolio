@@ -101,13 +101,5 @@ export const Circles = () => (
       animation="bounceTop"
       time="5"
     />
-    <Circle
-      top="60"
-      left="-10"
-      color="ffffff"
-      size="25"
-      animation="zoomInOut"
-      time="5"
-    />
   </BgCircles>
 );

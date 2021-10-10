@@ -16,7 +16,7 @@ export const Header = () => {
             >
               <span></span>
             </button>
-            {button ? (
+            {button && (
               <nav className="nav">
                 <div className="nav-inner">
                   <ul>
@@ -25,11 +25,11 @@ export const Header = () => {
                         onClick={() => {
                           setButton(!button);
                         }}
-                        to="/portfolio"
+                        to="/"
                         className="nav-item"
                         aria-label="Home"
                       >
-                        home
+                        <span>home</span>
                       </Link>
                     </li>
 
@@ -38,11 +38,11 @@ export const Header = () => {
                         onClick={() => {
                           setButton(!button);
                         }}
-                        to="/portfolio/about"
+                        to="/about"
                         className="nav-item"
                         aria-label="About"
                       >
-                        about
+                        <span>about</span>
                       </Link>
                     </li>
 
@@ -51,18 +51,16 @@ export const Header = () => {
                         onClick={() => {
                           setButton(!button);
                         }}
-                        to="/portfolio/projects"
+                        to="/projects"
                         className="nav-item"
                         aria-label="Projects"
                       >
-                        portfolio
+                        <span>portfolio</span>
                       </Link>
                     </li>
                   </ul>
                 </div>
               </nav>
-            ) : (
-              console.log("hola")
             )}
           </div>
         </div>

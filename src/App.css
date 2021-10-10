@@ -1,21 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 :root {
-  --main-color: #e02f6b;
+  --main-color: #a5234f;
   --blue: #0000ff;
   --blue-dark: #18293c;
   --orange: #ffa500;
+  --background-switch: #848487;
   --green-yellow: #cddc39;
   --body-background: #f0f3fa;
   --pink-light: #efa2b4;
   --cyan-light: #aef1ee;
   --white: #fff;
-  --white-alpha-40: rgba(255, 255, 255, 0.4);
+  --white-alpha-40: rgba(255, 255, 255, 0.5);
   --white-alpha-80: rgba(255, 255, 255, 0.8);
-  --white-alpha-25: rgba(255, 255, 255, 0.25);
-  --backdrop-filter-blur: blur(5px);
+  --white-alpha-25: rgba(255, 255, 255, 0.5);
+  --backdrop-filter-blur: blur(6.5px);
   --numeros-letras-primario: #111521;
-  --letras-cover: #f9f9f9;
+  --letras-cover: #111521;
 }
 * {
   box-sizing: border-box;
@@ -36,8 +37,8 @@ html {
 body {
   background-image: linear-gradient(
     to bottom right,
-    var(--pink-light),
-    var(--cyan-light)
+    var(--cyan-light),
+    var(--pink-light)
   );
   background-attachment: fixed;
   color: var(--blue-dark);
@@ -89,9 +90,9 @@ ul {
 }
 
 section {
-  background-color: var(--white-alpha-25);
+  background-color: var(--white-alpha-40);
   backdrop-filter: var(--backdrop-filter-blur);
-  border: 1px solid var(--white-alpha-40);
+  border: 1px solid var(--white-alpha-80);
   border-radius: 30px;
   min-height: calc(100vh - 70px);
 }
@@ -258,15 +259,16 @@ button {
     --orange: #ffa500;
     --green-yellow: #cddc39;
     --body-background: #f0f3fa;
-    --pink-light: #a88aeb;
-    /* --pink-light: #efa2b4; */
-    --cyan-light: #aef1ee;
+    --pink-light: rgb(46 107 204);
+    --cyan-light: #18293c;
     --white: #fff;
-    --white-alpha-40: rgba(255, 255, 255, 0.4);
-    --white-alpha-25: rgba(255, 255, 255, 0.25);
+    --white-alpha-40: rgba(0, 0, 0, 0.6);
+    --white-alpha-80: rgba(0, 0, 0, 0.8);
+    --white-alpha-25: rgba(0, 0, 0, 0.6);
     --backdrop-filter-blur: blur(5px);
     --numeros-letras-primario: #111521;
     --letras-cover: #f9f9f9;
+    --background-switch: #c2c2f2;
   }
 
   ::-webkit-scrollbar-track {

@@ -1,4 +1,3 @@
-import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import { Info } from "../contact/Info";
@@ -21,15 +20,11 @@ export const Home = () => {
             <p>hi! I'm</p>
             <h1>Bryan Imbaquingo</h1>
             <h2>Front end react developer</h2>
-            <Link to="/portfolio/about" className="btn" aria-label="About">
+            <Link to="/about" className="btn" aria-label="About">
               more about me
             </Link>
 
-            <Link
-              to="/portfolio/projects"
-              className="btn"
-              aria-label="Projects"
-            >
+            <Link to="/projects" className="btn" aria-label="Projects">
               Portfolio
             </Link>
           </div>

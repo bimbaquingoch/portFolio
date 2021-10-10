@@ -114,7 +114,11 @@
   width: 100%;
 }
 
-.header .nav-inner ul li a:hover,
-.header .nav-inner ul li a:active {
+.nav-inner ul li .nav-item span {
+  color: var(--letras-cover);
+}
+
+.header .nav-inner ul .nav-item span:hover,
+.header .nav-inner ul .nav-item span:active {
   color: var(--main-color);
 }

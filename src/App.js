@@ -13,15 +13,15 @@ const App = () => {
       <Router>
         <Header />
         <Switch>
-          <Route path="/portfolio" exact>
+          <Route path="/" exact>
             <Home />
           </Route>
 
-          <Route path="/portfolio/about" exact>
+          <Route path="/about" exact>
             <About />
           </Route>
 
-          <Route path="/portfolio/projects" exact>
+          <Route path="/projects" exact>
             <Portfolio />
           </Route>
         </Switch>

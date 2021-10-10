@@ -48,7 +48,7 @@ export const projects = [
     id: 5,
     desc: "Simple medical vet dating",
     title: "Medical vet dating",
-    img: "https://raw.githubusercontent.com/bimbaquingoch/01-citas-mascotas/master/public/pacientes.png?token=AMRFYBRSAIUHDOHTCVXFJN3BK72CI",
+    img: "https://raw.githubusercontent.com/bimbaquingoch/01-citas-mascotas/master/public/pacientes.png?token=AMRFYBW6AUSHL67NZR3B7C3BNOIXM",
     created: "24 - 07 - 2021",
     tech: "react , styled components , react-toastify",
     url: "https://compassionate-beaver-6d56de.netlify.app/",
