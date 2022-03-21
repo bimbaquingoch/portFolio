@@ -2,7 +2,8 @@ import "./Home.css";
 import { Link } from "react-router-dom";
 import { Info } from "../contact/Info";
 
-export const Home = () => {
+export const Home = () =>
+{
   return (
     <section className="home-section aling-items-center">
       <div className="container">
@@ -19,7 +20,7 @@ export const Home = () => {
           <div className="home-text">
             <p>hi! I'm</p>
             <h1>Bryan Imbaquingo</h1>
-            <h2>Front end react developer</h2>
+            <h2>Frontend react developer</h2>
             <Link to="/about" className="btn" aria-label="About">
               more about me
             </Link>

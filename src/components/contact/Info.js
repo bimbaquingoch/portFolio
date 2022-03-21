@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import {
+import
+{
   WhatsApp,
   Mail,
   Instagram,
@@ -33,7 +34,7 @@ const SocialContainer = styled.div`
 
 const SocialIcon = styled.div`
   align-items: center;
-  background-color: #${({ color }) => color};
+  background-color: #${ ( { color } ) => color };
   border-radius: 50%;
   color: #fff;
   cursor: pointer;
@@ -49,7 +50,8 @@ const SocialIcon = styled.div`
   }
 `;
 
-export const Info = () => {
+export const Info = () =>
+{
   return (
     <Container>
       <InfoItem>
@@ -76,7 +78,7 @@ export const Info = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/bryan-imbaquingo-almagro-636a90168/"
+            href="https://www.linkedin.com/in/bryan-andres-imbaquingo-almagro-636a90168/"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn Icon"

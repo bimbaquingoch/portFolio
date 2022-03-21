@@ -18,20 +18,16 @@ const Skills = styled.div`
   text-transform: capitalize;
 `;
 
-const Education = () => {
+const Education = () =>
+{
   return (
     <div className="tab-content" id="education">
       <div className="timeline">
-        <div className="timeline-item">
-          <span className="date">2021 - ...</span>
-          <h4>Udemy</h4>
-          <p>React: De 0 a experto (Hooks y MERN) Fernando Herrera</p>
-        </div>
 
         <div className="timeline-item">
           <span className="date">2016 - 2022</span>
           <h4>Universidad Politécnica Salesiana</h4>
-          <p>Engineer degree: Computer Science Expected: February 2022. </p>
+          <p>Engineer degree: Computer Science Expected: March 2022. </p>
         </div>
 
         <div className="timeline-item">
@@ -42,12 +38,19 @@ const Education = () => {
             Expected: April 2020
           </p>
         </div>
+
+        <div className="timeline-item">
+          <span className="date">2021 - ...</span>
+          <h4>Udemy</h4>
+          <p>React: De 0 a experto (Hooks y MERN) Fernando Herrera</p>
+        </div>
       </div>
     </div>
   );
 };
 
-const Experience = () => {
+const Experience = () =>
+{
   return (
     <div className="tab-content" id="experience">
       <div className="timeline">
@@ -55,8 +58,7 @@ const Experience = () => {
           <span className="date"></span>
           <h4>Experience</h4>
           <p>
-            Actually I have experience with personal projects see my projects on
-            my portfolio
+            See my projects on  my portfolio
           </p>
           <br />
           <Link to="/projects" className="btn">
@@ -68,8 +70,9 @@ const Experience = () => {
   );
 };
 
-export const About = () => {
-  const [eduExp, setEduExp] = useState(false);
+export const About = () =>
+{
+  const [ eduExp, setEduExp ] = useState( false );
 
   return (
     <section className="about-section sec-padding">
@@ -100,30 +103,26 @@ export const About = () => {
             </p>
             <br />
             <p>
-              My develop environment is{" "}
+              My develop environment is{ " " }
               <b>
                 <i>Ubuntu 20.04</i>
-              </b>{" "}
+              </b>{ " " }
               and my favorites text editors are
               <b>
                 <i>Visual Studio Code</i>
-              </b>{" "}
-              and{" "}
-              <b>
-                <i>Neovim</i>
               </b>
             </p>
-            {/*skills*/}
+            {/*skills*/ }
             <h3>Skills</h3>
             <SkilContainer>
-              {skils.map((item) => (
-                <Skills key={item}>{item}</Skills>
-              ))}
+              { skils.map( ( item ) => (
+                <Skills key={ item }>{ item }</Skills>
+              ) ) }
             </SkilContainer>
-            {/* education experience*/}
+            {/* education experience*/ }
             <div className="about-tabs">
               <button
-                onClick={() => setEduExp(false)}
+                onClick={ () => setEduExp( false ) }
                 type="button"
                 className="tab-item"
                 data-target="#"
@@ -136,7 +135,7 @@ export const About = () => {
                 Education
               </button>
               <button
-                onClick={() => setEduExp(true)}
+                onClick={ () => setEduExp( true ) }
                 type="button"
                 className="tab-item"
                 data-target="#"
@@ -149,8 +148,8 @@ export const About = () => {
                 Experience
               </button>
             </div>
-            {eduExp === false ? <Education /> : <Experience />}
-            {/* contact buttons*/}
+            { eduExp === false ? <Education /> : <Experience /> }
+            {/* contact buttons*/ }
             <a
               href="https://1drv.ms/w/s!AnjI1XaXQb2igqB_e84vkjer0-pzMQ?e=4yTOy2"
               className="btn"
@@ -160,7 +159,7 @@ export const About = () => {
             >
               download cv
             </a>
-            <Link to="/projects" className="btn" aria-label="Contact me">
+            <Link to="/" className="btn" aria-label="Contact me">
               contact me
             </Link>
           </div>
