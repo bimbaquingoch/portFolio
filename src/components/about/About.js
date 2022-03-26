@@ -42,7 +42,13 @@ const Education = () =>
         <div className="timeline-item">
           <span className="date">2021 - ...</span>
           <h4>Udemy</h4>
-          <p>React: De 0 a experto (Hooks y MERN) Fernando Herrera</p>
+          <p>React: De 0 a experto (Hooks y MERN) - Fernando Herrera</p>
+        </div>
+
+        <div className="timeline-item">
+          <span className="date">2021 - ...</span>
+          <h4>Udemy</h4>
+          <p>React - La Guía Completa: Hooks Context Redux MERN +15 Apps - Juan Pablo De la torre Valdez</p>
         </div>
       </div>
     </div>
