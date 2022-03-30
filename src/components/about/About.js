@@ -113,10 +113,8 @@ export const About = () =>
               <b>
                 <i>Ubuntu 20.04</i>
               </b>{ " " }
-              and my favorites text editors are
-              <b>
-                <i>Visual Studio Code</i>
-              </b>
+              and my favorites text editors are <b>Visual Studio Code </b>
+              and <b>Neovim</b>
             </p>
             {/*skills*/ }
             <h3>Skills</h3>
@@ -134,7 +132,7 @@ export const About = () =>
                 data-target="#"
                 style={
                   eduExp === false
-                    ? { color: "#ff005d" }
+                    ? { color: "#e02f6b" }
                     : { color: "var(--letras-cover)" }
                 }
               >
@@ -147,7 +145,7 @@ export const About = () =>
                 data-target="#"
                 style={
                   eduExp === true
-                    ? { color: "#ff005d" }
+                    ? { color: "#e02f6b" }
                     : { color: "var(--letras-cover)" }
                 }
               >

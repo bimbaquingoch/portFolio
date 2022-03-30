@@ -1,161 +1,165 @@
 .section-title {
-  margin-top: 70px;
+   margin-top: 70px;
 }
 
 .section-title h2 {
-  color: var(--letras-cover);
+   color: var(--letras-cover);
 }
 
 .about-img {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  width: 100%;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   width: 100%;
 }
 
 .about-text {
-  color: var(--letras-cover);
-  padding: 35px 15px;
+   color: var(--letras-cover);
+   padding: 35px 15px;
 }
 
 @keyframes bounce {
-  from {
-    top: 0px;
-  }
-  to {
-    top: 500;
-  }
+   from {
+      top: 0px;
+   }
+   to {
+      top: 500;
+   }
 }
 .about-img .img-box {
-  animation: bounce 3s linear infinite;
-  background-color: var(--white-alpha-25);
-  border: 1px solid var(--white-alpha-40);
-  border-radius: 50%;
-  margin: auto;
-  max-width: 250px;
+   animation: bounce 3s linear infinite;
+   background-color: var(--white-alpha-25);
+   border: 1px solid var(--white-alpha-40);
+   border-radius: 50%;
+   margin: auto;
+   max-width: 250px;
 }
 
 .about-img .img-box img {
-  border-radius: 50%;
-  width: 100%;
+   border-radius: 50%;
+   width: 100%;
 }
 
 .about-text h3 {
-  font-size: 2rem;
-  margin: 20px 0;
-  text-transform: capitalize;
+   font-size: 2rem;
+   margin: 20px 0;
+   text-transform: capitalize;
 }
 
 .about-tabs {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-top: 20px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   margin-top: 20px;
 }
 
 .about-tabs .tab-item {
-  background-color: transparent;
-  border: none;
-  color: var(--blue-dark);
-  cursor: pointer;
-  display: inline-block;
-  font-size: 2rem;
-  font-weight: 500;
-  margin: 0 30px 0 0;
-  opacity: 0.5;
-  padding: 2px 0;
-  position: relative;
-  text-transform: capitalize;
-  transition: all 0.3s ease;
+   background-color: transparent;
+   border: none;
+   color: var(--blue-dark);
+   cursor: pointer;
+   display: inline-block;
+   font-size: 2rem;
+   font-weight: 500;
+   margin: 0 30px 0 0;
+   opacity: 0.5;
+   padding: 5px 0;
+   position: relative;
+   text-transform: capitalize;
+   transition: all 0.3s ease;
 }
 
 .about-tabs .tab-item:last-child {
-  margin: 0;
+   margin: 0;
 }
 
 .about-tabs .tab-item::before {
-  background-color: var(--blue-dark);
-  bottom: 0;
-  content: "";
-  height: 1px;
-  left: 0;
-  position: absolute;
-  transition: width 0.3s ease;
-  width: 0%;
+   background-color: var(--blue-dark);
+   bottom: 0;
+   content: "";
+   height: 1px;
+   left: 0;
+   position: absolute;
+   transition: width 0.3s ease;
+   width: 0%;
 }
 
 .about-tabs .tab-item:focus {
-  border-right: 1px solid var(--main-color);
-  border-bottom: 1px solid var(--main-color);
-  box-shadow: 0 1px 3px 0 var(--main-color);
-  padding: 3px;
+   border-right: 1px solid var(--main-color);
+   border-bottom: 1px solid var(--main-color);
+   box-shadow: 0 1px 3px 0 var(--main-color);
+   padding: 3px;
 }
 .about-tabs .tab-item:hover {
-  border-right: 1px solid var(--main-color);
-  border-bottom: 1px solid var(--main-color);
-  box-shadow: 0 1px 3px 0 var(--main-color);
-  padding: 3px;
+   border-right: 1px solid var(--main-color);
+   border-bottom: 1px solid var(--main-color);
+   box-shadow: 0 1px 3px 0 var(--main-color);
+   padding: 3px;
 }
 
 .about-text .timeline {
-  position: relative;
+   position: relative;
 }
 
 .about-text .timeline::before {
-  background-color: var(--main-color);
-  content: "";
-  height: 100%;
-  left: 5px;
-  position: absolute;
-  top: 0;
-  width: 1px;
+   background-color: var(--main-color);
+   content: "";
+   height: 100%;
+   left: 5px;
+   position: absolute;
+   top: 0;
+   width: 1px;
 }
 
 .about-text .tab-content {
-  padding: 40px 0;
+   padding: 40px 0;
 }
 
 .about-text .timeline-item {
-  margin-bottom: 30px;
-  padding: 10px 0 0 30px;
-  position: relative;
+   margin-bottom: 30px;
+   padding: 10px 0 0 30px;
+   position: relative;
 }
 
 .about-text .timeline-item::before {
-  background-color: var(--main-color);
-  border-radius: 50%;
-  content: "";
-  height: 11px;
-  left: 0;
-  position: absolute;
-  top: 16px;
-  width: 11px;
+   background-color: var(--main-color);
+   border-radius: 50%;
+   content: "";
+   height: 11px;
+   left: 0;
+   position: absolute;
+   top: 16px;
+   width: 11px;
 }
 
 .about-text .timeline-item:last-child {
-  margin-bottom: 0;
+   margin-bottom: 0;
 }
 .about-text .timeline-item .date {
-  color: var(--main-color);
-  display: block;
-  font-weight: 400;
-  margin: 0 0 10px;
+   color: var(--main-color);
+   display: block;
+   font-weight: 400;
+   margin: 0 0 10px;
 }
 .about-text .timeline-item h4 {
-  font-size: 1.8rem;
-  margin: 0 0 10px;
-  text-transform: capitalize;
+   font-size: 1.8rem;
+   margin: 0 0 10px;
+   text-transform: capitalize;
 }
 .about-text .timeline-item h4 span {
-  font-weight: 400;
+   font-weight: 400;
 }
 
 .about-text .btn {
-  margin: 0 15px 15px 0;
+   margin: 0 15px 15px 0;
 }
 
 @media screen and (min-width: 720px) {
-  .about-img {
-    display: block;
-  }
+   .about-img {
+      display: block;
+   }
+   .about-text {
+      overflow-y: scroll;
+      height: 60vh;
+   }
 }

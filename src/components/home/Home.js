@@ -18,9 +18,10 @@ export const Home = () =>
           </div>
 
           <div className="home-text">
-            <p>hi! I'm</p>
+            <p><i>hi! I'm</i></p>
             <h1>Bryan Imbaquingo</h1>
-            <h2>Frontend react developer</h2>
+            {/* <h2>Frontend react developer</h2> */ }
+            <img src="https://readme-typing-svg.herokuapp.com/?color=FFFFFF&lines=Computer+Science+Engineer;Javascript(JS)+developer;+Frontend+React+Developer;Nice+to+meet+you!ฅ^•ﻌ•^ฅ&center=true&size=26" alt="texto_descriptivo"></img>
             <Link to="/about" className="btn" aria-label="About">
               more about me
             </Link>
