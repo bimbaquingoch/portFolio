@@ -1,117 +1,124 @@
 .portfolio-section h2 {
-  padding-top: 40px;
-  padding-bottom: 30px;
+   padding-top: 40px;
+   padding-bottom: 30px;
 }
 .portfolio-item {
-  margin: 0 15px 30px;
+   margin: 0 15px 30px;
 }
 .portfolio-item-thumbnail {
-  background-color: var(--white-alpha-25);
-  border: 1px solid var(--white-alpha-40);
-  border-radius: 10px;
-  padding: 1px;
+   background-color: var(--white-alpha-25);
+   border: 1px solid var(--white-alpha-40);
+   border-radius: 10px;
+   padding: 1px;
 }
 .portfolio-item-thumbnail img {
-  border-radius: 10px;
-  width: 100%;
+   border-radius: 10px;
+   width: 100%;
 }
 
 .portfolio-item h3 {
-  color: var(--letras-cover);
-  font-size: 2rem;
-  margin: 20px 0;
-  text-transform: capitalize;
+   color: var(--letras-cover);
+   font-size: 2rem;
+   margin: 20px 0;
+   text-transform: capitalize;
 }
 
 .portfolio-items-details {
-  display: none;
+   display: none;
 }
 
 /* popup */
 .portfolio-popup {
-  color: var(--letras-cover);
-  height: 100%;
-  left: 0;
-  overflow-y: auto;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 200;
+   color: var(--letras-cover);
+   height: 100%;
+   left: 0;
+   overflow-y: auto;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 200;
 }
 
 .pp-inner {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 40px 15px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   min-height: 100vh;
+   padding: 40px 15px;
 }
 
 .pp-content {
-  background-color: var(--white-alpha-25);
-  backdrop-filter: var(--backdrop-filter-blur);
-  border-radius: 30px;
-  border: 1px solid var(--white-alpha-40);
-  max-width: 1200px;
-  padding: 30px;
-  width: 100%;
+   background-color: var(--white-alpha-25);
+   backdrop-filter: var(--backdrop-filter-blur);
+   border-radius: 30px;
+   border: 1px solid var(--white-alpha-40);
+   max-width: 1200px;
+   padding: 30px;
+   width: 100%;
 }
 .pp-header {
-  position: relative;
+   position: relative;
 }
 
 .pp-header .btn {
-  align-items: center;
-  display: flex;
-  height: 40px;
-  justify-content: center;
-  padding: 0;
-  position: absolute;
-  right: -40px;
-  top: -40px;
-  width: 40px;
+   align-items: center;
+   display: flex;
+   height: 40px;
+   justify-content: center;
+   padding: 0;
+   position: absolute;
+   right: -40px;
+   top: -40px;
+   width: 40px;
 }
 
 .pp-thumbnail {
-  align-items: center;
-  display: flex;
+   align-items: center;
+   display: flex;
 }
 
 .pp-thumbnail img {
-  border-radius: 10px;
-  margin: 0 auto;
+   border-radius: 10px;
+   margin: 0 auto;
 }
 
 .pp-header h3 {
-  font-size: 2.5rem;
-  margin: 20px 0 15px;
-  text-transform: capitalize;
+   font-size: 2.5rem;
+   margin: 20px 0 15px;
+   text-transform: capitalize;
 }
 .pp-body .description {
-  margin-bottom: 20px;
+   margin-bottom: 20px;
 }
 
 .pp-body .general-info li {
-  font-weight: 500;
-  margin-bottom: 10px;
-  text-transform: capitalize;
+   font-weight: 500;
+   margin-bottom: 10px;
+   text-transform: capitalize;
 }
 
 .pp-body .general-info li span {
-  font-weight: 300;
+   font-weight: 300;
 }
 
 .link-project {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+   align-items: center;
+   display: flex;
+   flex-direction: column;
 }
 .link-project a {
-  margin-top: 10px;
+   margin-top: 10px;
 }
 
 /* animacion */
 .portfolio-popup {
-  animation: fadeIn;
-  animation-duration: 3500ms;
+   animation: fadeIn;
+   animation-duration: 3500ms;
+}
+
+@media screen and (min-width: 720px) {
+   .proyectos {
+      overflow-y: scroll;
+      height: 60vh;
+   }
 }
