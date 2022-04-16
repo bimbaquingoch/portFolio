@@ -1,3 +1,48 @@
+export const education = [
+  {
+    id: 0,
+    fecha: '2016 - 2022',
+    institucion: 'Universidad Politécnica Salesiana',
+    desc: 'Engineer degree: Computer Science Expected: March 2022. '
+  },
+  {
+    id: 1,
+    fecha: '2019 - 2020',
+    institucion: 'Cambridge Assessment',
+    desc: 'Certificate in ESOL international (entry 3) (Preliminary) Level B1 Expected: April 2020'
+  },
+  {
+    id: 2,
+    fecha: '2021 - ...',
+    institucion: 'Udemy - React:',
+    desc: 'De 0 a experto (Hooks y MERN) - Fernando Herrera'
+  },
+  {
+    id: 3,
+    fecha: '2021 - ...',
+    institucion: 'Udemy - React - La Guía Completa:',
+    desc: 'Hooks Context Redux MERN +15 Apps - Juan Pablo De la torre Valdez'
+  },
+  {
+    id: 4,
+    fecha: '2022 - ...',
+    institucion: 'Udemy - Node:',
+    desc: 'De cero a experto - Fernando Herrera'
+  },
+  {
+    id: 5,
+    fecha: '2022 - ...',
+    institucion: 'Udemy - React Native:',
+    desc: `Aplicaciones nativas para iOS y Android - Fernando Herrera`
+  },
+  {
+    id: 6,
+    fecha: '2022 - ...',
+    institucion: 'Udemy - Master en Python 3.x:',
+    desc: 'Aprende de 0 a Experto con práctica - Alvaro Chirou'
+  },
+];
+
 export const projects = [
   {
     id: 0,
