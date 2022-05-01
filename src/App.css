@@ -103,11 +103,6 @@ section {
   position: relative;
 }
 
-/* .container { */
-/*   padding: 0 40px; */
-/*   width: 100%; */
-/* } */
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -137,7 +132,7 @@ section {
 /* Custom scrollbar */
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 0.1rem;
 }
 
 ::-webkit-scrollbar-track {
