@@ -100,14 +100,14 @@ export const About = () => {
               </button>
             </div>
             {eduExp === false ? <Education /> : <Experience />}
-            <Link
+            <a
               href='https://1drv.ms/w/s!AnjI1XaXQb2igqB_e84vkjer0-pzMQ?e=4yTOy2'
               className='btn'
               target='_blank'
               rel='noreferrer'
               aria-label='Download CV'>
               download cv
-            </Link>
+            </a>
             <Link to='/' className='btn' aria-label='Contact me'>
               contact me
             </Link>
