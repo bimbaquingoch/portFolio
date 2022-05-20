@@ -117,7 +117,7 @@ export const skils = [
   "Javascript",
   "typescript",
   "react",
-  "angular",
+  "nextJS",
   "styled components",
   "bootstrap",
   "material UI",
