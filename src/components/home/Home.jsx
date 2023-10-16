@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Info } from "../contact/Info";
-import "./Home.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { Info } from '../contact/Info';
+import './Home.css';
 
 export const Home = () => {
   return (
@@ -24,8 +24,9 @@ export const Home = () => {
             <h1>Bryan Imbaquingo</h1>
             {/* <h2>Frontend react developer</h2> */}
             <img
-              src='https://readme-typing-svg.herokuapp.com/?color=FFFFFF&lines=Computer+Science+Engineer;Javascript(JS)+developer;+Frontend+React+Developer;Nice+to+meet+you!ฅ^•ﻌ•^ฅ&center=true&size=26'
-              alt='texto_descriptivo'></img>
+              src='https://readme-typing-svg.herokuapp.com/?color=FFFFFF&lines=Computer+Science+Engineer;Full+Stack+Developer;Nice+to+meet+you!ฅ^•ﻌ•^ฅ&center=true&size=26'
+              alt='texto_descriptivo'
+            ></img>
             <Link to='/about' className='btn' aria-label='About'>
               more about me
             </Link>

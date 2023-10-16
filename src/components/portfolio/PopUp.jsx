@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export const PopUp = ({
   title,
@@ -22,7 +22,8 @@ export const PopUp = ({
               }}
               className='btn pp-close'
               type='button'
-              style={{ fontWeight: "800", fontSize: "2rem" }}>
+              style={{ fontWeight: '800', fontSize: '2rem' }}
+            >
               X
             </button>
             <div className='pp-thumbnail'>
@@ -44,7 +45,12 @@ export const PopUp = ({
                 </li>
                 <li className='link-project'>
                   View on:
-                  <a className='btn' href={url} rel='noreferrer'>
+                  <a
+                    className='btn'
+                    href={url}
+                    rel='noreferrer'
+                    target='_blank'
+                  >
                     <span>{title}</span>
                   </a>
                 </li>

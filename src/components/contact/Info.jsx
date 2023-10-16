@@ -1,19 +1,12 @@
-import React from "react";
-import {
-  WhatsApp,
-  Mail,
-  Instagram,
-  LinkedIn,
-  Twitter,
-  GitHub,
-} from "@material-ui/icons";
+import React from 'react';
+import { Mail, Instagram, LinkedIn, Twitter, GitHub } from '@material-ui/icons';
 
 import {
   Container,
   InfoItem,
   SocialContainer,
   SocialIcon,
-} from "../StyledComponents";
+} from '../StyledComponents';
 
 export const Info = () => {
   return (
@@ -23,24 +16,20 @@ export const Info = () => {
           <a
             href='mailto:bryanimbaquingo1@gmail.com'
             rel='noreferrer'
-            aria-label='LinkedIn Icon'>
+            aria-label='LinkedIn Icon'
+            target='_blank'
+          >
             <SocialIcon color='3b5999'>
               <Mail fontSize='large' />
             </SocialIcon>
           </a>
-          <a
-            href='https://api.whatsapp.com/send/?phone=593963766640&text=Hola!%20Nos%20Interesa%20tu%20perfil.&app_absent=0'
-            rel='noreferrer'
-            aria-label='LinkedIn Icon'>
-            <SocialIcon color='57c181'>
-              <WhatsApp fontSize='large' />
-            </SocialIcon>
-          </a>
 
           <a
-            href='https://www.linkedin.com/in/bryan-andres-imbaquingo-almagro-636a90168/'
+            href='https://www.linkedin.com/in/bryan-imbaquingo-636a90168/'
             rel='noreferrer'
-            aria-label='LinkedIn Icon'>
+            aria-label='LinkedIn Icon'
+            target='_blank'
+          >
             <SocialIcon color='3b5999'>
               <LinkedIn fontSize='large' />
             </SocialIcon>
@@ -49,7 +38,9 @@ export const Info = () => {
           <a
             href='https://www.instagram.com/bryandresimba/'
             rel='noreferrer'
-            aria-label='Instagram Icon'>
+            aria-label='Instagram Icon'
+            target='_blank'
+          >
             <SocialIcon color='e4405f'>
               <Instagram fontSize='large' />
             </SocialIcon>
@@ -58,7 +49,9 @@ export const Info = () => {
           <a
             href='https://twitter.com/bryandresimba'
             rel='noreferrer'
-            aria-label='Twitter Icon'>
+            aria-label='Twitter Icon'
+            target='_blank'
+          >
             <SocialIcon color='55acee'>
               <Twitter fontSize='large' />
             </SocialIcon>
@@ -67,7 +60,9 @@ export const Info = () => {
           <a
             href='https://github.com/bimbaquingoch'
             rel='noreferrer'
-            aria-label='GitHub Icon'>
+            aria-label='GitHub Icon'
+            target='_blank'
+          >
             <SocialIcon color='051f2b'>
               <GitHub fontSize='large' />
             </SocialIcon>
